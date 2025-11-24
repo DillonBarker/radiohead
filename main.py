@@ -321,7 +321,7 @@ else:
             playlist_id = existing_playlist['id']
             
             # Update playlist description with new timestamp
-            updated_description = f"Predicted setlist for Radiohead London Night 4 based on 2025 European tour data (12 shows analyzed). Updated {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+            updated_description = f"Predicted setlist for Radiohead London Night 4 based on 2025 European tour data (12 shows analyzed). Updated {datetime.now().strftime('%Y-%m-%d %H:%M')}. GitHub: https://github.com/DillonBarker/radiohead"
             sp.playlist_change_details(
                 playlist_id,
                 description=updated_description
@@ -343,7 +343,7 @@ else:
                 user=user_id,
                 name=PLAYLIST_NAME,
                 public=True,
-                description=f"Predicted setlist for Radiohead London Night 4 based on 2025 European tour data (12 shows analyzed). Updated {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+                description=f"Predicted setlist for Radiohead London Night 4 based on 2025 European tour data (12 shows analyzed). Updated {datetime.now().strftime('%Y-%m-%d %H:%M')}. GitHub: https://github.com/DillonBarker/radiohead"
             )
             
             # Add tracks
